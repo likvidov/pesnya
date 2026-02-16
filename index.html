@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesnya hit</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:wght@700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__logo"><img src="img/logo.svg" alt="logo">PESNYA HIT</div>
+      <nav class="header__nav">
+        <a href="#hero">Преимущества</a>
+        <a href="#">Отзывы</a>
+        <a href="#price">Цены</a>
+      </nav>
+      <div class="header__contact-info">
+        <a href="tel:+79990000000" class="header__phone">+7 (999) 000-00-00</a>
+        <div class="header__schedule">
+          Ежедневно с 10 до 22
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Песня, которая<br>станет Легендой</h1>
+          <p class="hero__description">Напишем уникальный трек под ключ для вашего <br>
+            события. Слова, которые трогают душу, и музыка,<br>
+            которая остаётся в сердце навсегда.</p>
+          <div class="hero__buttons">
+            <a href="#" class="btn btn-primary">Заказать песню</a>
+            <a href="#" class="btn btn-outline">Слушать примеры</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="img/hero_right.png" alt="">
+        </div>
+      </div>
+      <div class="hero__bg"></div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <h2 class="section__title">Почему <span>Нас Выбирают</span></h2>
+        <div class="advantages__grid">
+
+          <!-- Карточка 1 -->
+          <div class="advantages__card">
+            <div class="card__img"><img src="img/advantages/premium.svg" alt="Премиум Качество"></div>
+            <h3 class="card__title">Премиум Качество</h3>
+            <p class="card__desc">Никакого "домашнего" звука. Только
+              студийное оборудование класса А и
+              живые инструменты.</p>
+          </div>
+
+          <!-- Карточка 2 -->
+          <div class="advantages__card">
+            <div class="card__img"><img src="img/advantages/fast.svg" alt="Скорость 24 часа"></div>
+            <h3 class="card__title">Скорость 24 часа</h3>
+            <p class="card__desc">Нужно "вчера"? Мы умеем работать в
+              экстремально сжатые сроки без потери
+              качества.</p>
+          </div>
+
+          <!-- Карточка 3 -->
+          <div class="advantages__card">
+            <div class="card__img"><img src="img/advantages/unique.svg" alt="Уникальная музыка"></div>
+            <h3 class="card__title">Уникальная музыка</h3>
+            <p class="card__desc">Пишем музыку с нуля под ваше
+              настроение. Не используем избитые
+              шаблоны и стоки.</p>
+          </div>
+
+          <!-- Карточка 4 -->
+          <div class="advantages__card">
+            <div class="card__img"><img src="img/advantages/starauthor.svg" alt="Авторы Звезд"></div>
+            <h3 class="card__title">Авторы Звезд</h3>
+            <p class="card__desc">Наши гострайтеры пишут тексты для
+              артистов ТВ и радио. Смыслы будут
+              глубокими.</p>
+          </div>
+
+          <!-- Карточка 5 -->
+          <div class="advantages__card">
+            <div class="card__img"><img src="img/advantages/help.svg" alt="Помощь в записи"></div>
+            <h3 class="card__title">Помощь в записи</h3>
+            <p class="card__desc">Не умеете петь? Наш звукорежиссер
+              "вытянет" любую ноту, вы будете звучать
+              идеально.</p>
+          </div>
+
+          <!-- Карточка 6 -->
+          <div class="advantages__card">
+            <div class="card__img"><img src="img/advantages/guarantee.svg" alt="Гарантия результата">
+            </div>
+            <h3 class="card__title">Гарантия результата</h3>
+            <p class="card__desc">Работаем до полного утверждения.
+              Правки вносим бесплатно, пока вы не
+              скажете "Вау!".</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="container contact-form__container">
+        <div class="contact-form__content">
+          <h2 class="section__title contact-form__title">Ваша история достойна хита</h2>
+          <p class="contact-form__desc">
+            Не знаете с чего начать? Оставьте заявку, и наш продюсер свяжется с вами, чтобы
+            превратить ваши воспоминания в музыку.
+          </p>
+
+          <div class="features">
+            <div class="feature__item">
+              <span class="feature__emoji">✨</span>
+              <h3 class="feature__title">Индивидуальный подход</h3>
+            </div>
+            <div class="feature__item">
+              <span class="feature__emoji">🎧</span>
+              <h3 class="feature__title">Студийное качество</h3>
+            </div>
+          </div>
+
+          <!-- Форма -->
+          <form class="contact-form__form">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Ваш номер" required>
+            <button type="submit">Обсудить идею</button>
+          </form>
+        </div>
+
+        <div class="contact-form__image">
+          <img src="img/form-img.png" alt="Виниловая пластинка">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="gifts">
+      <div class="container">
+        <h2 class="section__title">Идеальный <span>Подарок Для...</span></h2>
+
+        <div class="gifts__grid">
+          <!-- Карточка 1 -->
+          <div class="gift-card" style="background-image: url('/img/gifts/gift1.png')">
+            <h3 class="gift-card__title">Свадьбы</h3>
+            <div class="gift-card__buttons">
+              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-primary">Заказать</button>
+            </div>
+          </div>
+
+          <!-- Карточка 2 -->
+          <div class="gift-card" style="background-image: url('/img/gifts/gift2.png')">
+            <h3 class="gift-card__title">Дня Рождения</h3>
+            <div class="gift-card__buttons">
+              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-primary">Заказать</button>
+            </div>
+          </div>
+
+          <!-- Карточка 3 -->
+          <div class="gift-card" style="background-image: url('/img/gifts/gift3.png')">
+            <h3 class="gift-card__title">Корпоратива</h3>
+            <div class="gift-card__buttons">
+              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-primary">Заказать</button>
+            </div>
+          </div>
+          <!-- Карточка 4 -->
+          <div class="gift-card" style="background-image: url('/img/gifts/gift4.png')">
+            <h3 class="gift-card__title">Признания</h3>
+            <div class="gift-card__buttons">
+              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-primary">Заказать</button>
+            </div>
+          </div>
+
+          <!-- Карточка 5 -->
+          <div class="gift-card" style="background-image: url('/img/gifts/gift5.png')">
+            <h3 class="gift-card__title">Извинения</h3>
+            <div class="gift-card__buttons">
+              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-primary">Заказать</button>
+            </div>
+          </div>
+
+          <!-- Карточка 6 -->
+          <div class="gift-card" style="background-image: url('/img/gifts/gift6.png')">
+            <h3 class="gift-card__title">Родителей</h3>
+            <div class="gift-card__buttons">
+              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-primary">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-song">
+      <div class="container">
+        <h2 class="section__title">Почему <span>именно Песня?</span></h2>
+
+        <p class="why-song__intro">
+          Вещи ломаются, гаджеты устаревают, а цветы вянут. Песня — это единственный подарок, который навсегда сохранит
+          ваши
+          эмоции и мгновенно перенесет в самые счастливые моменты жизни с первых аккордов.
+        </p>
+
+        <div class="why-song__grid">
+          <!-- Блок 01 -->
+          <div class="why-song__card">
+            <div class="why-song__header">
+              <span class="why-song__number">01</span>
+              <h3 class="why-song__title">Вечная память</h3>
+            </div>
+            <p class="why-song__desc">
+              Ваша песня будет с вами через 10, 20 и 50 лет. Её можно будет включить детям и внукам, передавая историю
+              вашей
+              семьи.
+            </p>
+          </div>
+
+          <!-- Блок 02 -->
+          <div class="why-song__card">
+            <div class="why-song__header">
+              <span class="why-song__number">02</span>
+              <h3 class="why-song__title">100% Эксклюзив</h3>
+            </div>
+            <p class="why-song__desc">
+              Такого подарка точно нет ни у кого в мире. Он создается в единственном экземпляре, исключительно для
+              вашего
+              близкого человека.
+            </p>
+          </div>
+
+          <!-- Блок 03 -->
+          <div class="why-song__card">
+            <div class="why-song__header">
+              <span class="why-song__number">03</span>
+              <h3 class="why-song__title">Вау-эффект</h3>
+            </div>
+            <p class="why-song__desc">
+              Слёзы радости, мурашки и искреннее удивление. Ни один материальный подарок не вызывает такого шквала живых
+              эмоций.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="free-consult">
+      <div class="container">
+        <h2 class="section__title">Хотите узнать, как будет звучать ваша история?</h2>
+        <p class="free-consult__desc">
+          Получите бесплатную консультацию и примеры треков в похожем стиле.
+        </p>
+
+        <form class="free-consult__form">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+          <button type="submit" class="btn btn-primary">Получить примеры</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section__title">Что говорят <span>Клиенты</span></h2>
+
+        <div class="reviews__grid">
+          <!-- Отзыв 1 -->
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              "Заказывал песню жене на юбилей. Она плакала от счастья! Ребята попали в самое сердце текстом. Спасибо за
+              эмоции!"
+            </p>
+            <div class="review-card__footer">
+              <img src="img/reviews/1.png" alt="Алексей М." class="review-card__avatar">
+              <div class="review-card__author">Алексей М.</div>
+            </div>
+          </div>
+
+          <!-- Отзыв 2 -->
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              "Делали гимн компании. Очень профессиональный подход, звук как у топ-звезд. Сделали за 2 дня, как и
+              обещали."
+            </p>
+            <div class="review-card__footer">
+              <img src="img/reviews/2.png" alt="Марина В." class="review-card__avatar">
+              <div class="review-card__author">Марина В.</div>
+            </div>
+          </div>
+
+          <!-- Отзыв 3 -->
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              "Я вообще не умею петь, но в студии меня так записали и обработали, что я себя не узнал. Звучит очень
+              круто!
+              Рекомендую."
+            </p>
+            <div class="review-card__footer">
+              <img src="img/reviews/3.png" alt="Дмитрий К." class="review-card__avatar">
+              <div class="review-card__author">Дмитрий К.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <h2 class="section__title">Ваш <span>Формат</span></h2>
+
+        <div class="pricing__grid">
+
+          <!-- Silver -->
+          <div class="pricing-card">
+            <h3 class="pricing-card__title">Silver</h3>
+            <div class="pricing-card__price">9 900 ₽</div>
+
+            <ul class="pricing-card__list">
+              <li>Авторский текст</li>
+              <li>Минусовка (лицензия)</li>
+              <li>Демо-вокал</li>
+            </ul>
+
+            <button class="pricing-card__btn">Заказать Silver</button>
+          </div>
+
+          <!-- Gold -->
+          <div class="pricing-card pricing-card--popular">
+            <h3 class="pricing-card__title">Gold Hit</h3>
+            <div class="pricing-card__price">24 900 ₽</div>
+
+            <ul class="pricing-card__list">
+              <li>Авторский текст</li>
+              <li>Эксклюзивная музыка</li>
+              <li>Студийная запись</li>
+              <li>Сведение и мастеринг</li>
+            </ul>
+
+            <button class="btn-primary pricing-card__btn">Заказать Gold Hit</button>
+          </div>
+
+          <!-- Platinum -->
+          <div class="pricing-card pricing-card--premium">
+            <h3 class="pricing-card__title">Platinum</h3>
+            <div class="pricing-card__price">59 000 ₽</div>
+
+            <ul class="pricing-card__list">
+              <li>Всё, что в Gold</li>
+              <li>Живые инструменты</li>
+              <li>Бэк-вокал</li>
+              <li>Видео-клип</li>
+              <li>Размещение на площадках</li>
+            </ul>
+
+            <button class="pricing-card__btn">Заказать Platinum</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="faq">
+      <div class="container">
+        <h2 class="section__title">Частые <span>Вопросы</span></h2>
+
+        <div class="faq__list">
+
+          <div class="faq-item active">
+            <button class="faq-item__question">
+              Как происходит процесс работы?
+              <span class="faq-item__icon">−</span>
+            </button>
+            <div class="faq-item__answer">
+              Мы созваниваемся, обсуждаем вашу историю и пожелания. Затем пишем текст,
+              утверждаем с вами. После этого создаём музыку, записываем вокал (ваш или наш)
+              и делаем финальное сведение.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Можно ли спеть самому, если нет голоса?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              Да. Мы подберём удобную тональность, поможем в студии и сделаем профессиональную
+              обработку. Даже если вы никогда не пели — результат приятно удивит.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Сколько времени занимает создание песни?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              В среднем от 2 до 5 дней в зависимости от выбранного тарифа и сложности проекта.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Кому принадлежат права на песню?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              Все права передаются вам после завершения проекта и полной оплаты.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cta">
+      <div class="container">
+
+        <div class="contact-cta__content">
+          <h2 class="section__title">
+            Остались сомнения? Давайте обсудим! </h2>
+
+          <p class="contact-cta__text">
+            Оставьте номер, и мы честно ответим на все вопросы без
+            навязывания услуг.
+          </p>
+
+          <form class="contact-cta__form">
+            <input type="text" placeholder="Ваше Имя" required>
+            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+            <button class="btn-primary" type="submit">Задать вопрос</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__top">
+        <!-- Лого и описание -->
+        <div class="footer__col">
+          <div class="footer__logo"><img src="img/logo.svg" alt="logo">PESNYA HIT</div>
+          <p class="footer__desc">
+            Создаем песни, которые становятся историей
+            вашей семьи и бизнеса.
+          </p>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer__col">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__list">
+            <li><a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+            <li><a href="mailto:hello@pesnya-hit.ru">hello@pesnya-hit.ru</a></li>
+            <li>Москва, адрес ...</li>
+          </ul>
+
+          <div class="footer__socials">
+            <a href="https://t.me/username" target="_blank" aria-label="Telegram">
+              <img src="/img/tg.svg" alt="Telegram icon">
+            </a>
+
+            <a href="https://wa.me/79990000000" target="_blank" aria-label="WhatsApp">
+              <img src="/img/wp.svg" alt="WhatsApp icon">
+            </a>
+          </div>
+        </div>
+
+        <!-- Реквизиты -->
+        <div class="footer__col col__requisites">
+          <h4 class="footer__title">Реквизиты</h4>
+          <ul class="footer__list">
+            <li>ИП ...</li>
+            <li>ИНН ...</li>
+            <li>ОГРНИП ...</li>
+          </ul>
+          <a href="#" class="footer__policy">Политика конфиденциальности</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copy">
+          © 2026 PESNYA HIT. Все права защищены.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const btn = item.querySelector('.faq-item__question');
+      const icon = item.querySelector('.faq-item__icon');
+
+      btn.addEventListener('click', () => {
+        item.classList.toggle('active');
+
+        icon.textContent = item.classList.contains('active') ? '−' : '+';
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
