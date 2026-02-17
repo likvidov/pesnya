@@ -87,6 +87,8 @@ button,
   align-items: center;
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
+  width: 200px;
+  height: 29px;
   font-size: 26px;
 }
 
