@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pesnya hit</title>
+  <link rel="icon" type="image/png" href="img/logo.svg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -164,7 +165,7 @@
               <button class="btn btn-primary">Заказать</button>
             </div>
 
-            <audio src="audio/demo1.mp3"></audio>
+            <audio controls loop src="audio/demo1.mp3"></audio>
           </div>
 
           <!-- Карточка 2 -->
@@ -175,7 +176,7 @@
               <button class="btn btn-primary">Заказать</button>
             </div>
 
-            <audio src="audio/demo2.mp3"></audio>
+            <audio controls loop src="audio/demo2.mp3"></audio>
           </div>
 
           <!-- Карточка 3 -->
@@ -186,7 +187,7 @@
               <button class="btn btn-primary">Заказать</button>
             </div>
 
-            <audio src="audio/demo1.mp3"></audio>
+            <audio controls loop src="audio/demo1.mp3"></audio>
           </div>
           <!-- Карточка 4 -->
           <div class="gift-card" style="background-image: url('img/gifts/gift4.png')">
@@ -195,7 +196,7 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-            <audio src="audio/demo2.mp3"></audio>
+            <audio controls loop src="audio/demo2.mp3"></audio>
           </div>
 
           <!-- Карточка 5 -->
@@ -205,7 +206,7 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-            <audio src="audio/demo1.mp3"></audio>
+            <audio controls loop src="audio/demo1.mp3"></audio>
           </div>
 
           <!-- Карточка 6 -->
@@ -215,7 +216,7 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-            <audio src="audio/demo2.mp3"></audio>
+            <audio controls loop src="audio/demo2.mp3"></audio>
           </div>
         </div>
       </div>
@@ -527,7 +528,10 @@
     <div class="modal__overlay"></div>
     <div class="modal__content">
       <button class="modal__close">&times;</button>
-      <h2 class="section__title">Заказать песню</h2>
+      <h2 class="section__title modal__title">Заказать песню</h2>
+      <p class="modal__subtitle">
+        Оставьте контакты, и мы свяжемся с вами для уточнения деталей заказа.
+      </p>
       <form class="modal__form">
         <input type="text" name="name" placeholder="Ваше Имя" required>
         <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>

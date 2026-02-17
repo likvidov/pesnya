@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 
 html {
@@ -98,7 +97,7 @@ button,
   text-decoration: none;
 }
 
-a:hover {
+a:not(.btn-primary):hover {
   background: var(--main-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -196,10 +195,6 @@ a:hover {
   font-weight: 600;
   text-transform: uppercase;
 }
-
-/* .btn:hover {
-  transform: scale(1.05);
-} */
 
 .btn-primary {
   background: var(--main-gradient);
@@ -388,6 +383,11 @@ a:hover {
   min-height: 400px;
   position: relative;
   overflow: hidden;
+}
+
+.gift-card audio {
+  margin-top: 10px;
+  width: 100%;
 }
 
 .gift-card::before {
@@ -924,6 +924,18 @@ a:hover {
   z-index: 9999;
 }
 
+.modal__title {
+  font-size: clamp(28px, 5vw, 40px);
+  margin-bottom: 10px;
+}
+
+.modal__subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
 .modal__overlay {
   position: absolute;
   top: 0;
@@ -971,10 +983,11 @@ a:hover {
   border-radius: 50px;
   border: none;
   background: var(--gold-gradient);
-  color: #fff;
+  color: #222;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  width: 100%;
 }
 
 @media(max-width:1200px) {
