@@ -17,10 +17,10 @@
 
   <header class="header">
     <div class="container header__inner">
-      <div class="header__logo"><img src="img/logo.svg" alt="logo">PESNYA HIT</div>
+      <div class="header__logo"><img src="img/logo.png" alt="logo"></div>
       <nav class="header__nav">
         <a href="#hero">Преимущества</a>
-        <a href="#">Отзывы</a>
+        <a href="#reviews">Отзывы</a>
         <a href="#price">Цены</a>
       </nav>
       <div class="header__contact-info">
@@ -42,7 +42,7 @@
             которая остаётся в сердце навсегда.</p>
           <div class="hero__buttons">
             <a href="#" class="btn btn-primary">Заказать песню</a>
-            <a href="#" class="btn btn-outline">Слушать примеры</a>
+            <a href="#" id="btn-examples" class="btn btn-outline">Слушать примеры</a>
           </div>
         </div>
         <div class="hero__image">
@@ -139,7 +139,7 @@
           <!-- Форма -->
           <form class="contact-form__form">
             <input type="text" name="name" placeholder="Ваше имя" required>
-            <input type="tel" name="phone" placeholder="Ваш номер" required>
+            <input type="tel" name="phone" inputmode="tel" placeholder="Ваш номер" required>
             <button type="submit">Обсудить идею</button>
           </form>
         </div>
@@ -151,7 +151,7 @@
     </section>
 
 
-    <section class="gifts">
+    <section id="gifts" class="gifts">
       <div class="container">
         <h2 class="section__title">Идеальный <span>Подарок Для...</span></h2>
 
@@ -160,53 +160,62 @@
           <div class="gift-card" style="background-image: url('img/gifts/gift1.png')">
             <h3 class="gift-card__title">Свадьбы</h3>
             <div class="gift-card__buttons">
-              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
+
+            <audio src="audio/demo1.mp3"></audio>
           </div>
 
           <!-- Карточка 2 -->
           <div class="gift-card" style="background-image: url('img/gifts/gift2.png')">
             <h3 class="gift-card__title">Дня Рождения</h3>
             <div class="gift-card__buttons">
-              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
+
+            <audio src="audio/demo2.mp3"></audio>
           </div>
 
           <!-- Карточка 3 -->
           <div class="gift-card" style="background-image: url('img/gifts/gift3.png')">
             <h3 class="gift-card__title">Корпоратива</h3>
             <div class="gift-card__buttons">
-              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
+
+            <audio src="audio/demo1.mp3"></audio>
           </div>
           <!-- Карточка 4 -->
           <div class="gift-card" style="background-image: url('img/gifts/gift4.png')">
             <h3 class="gift-card__title">Признания</h3>
             <div class="gift-card__buttons">
-              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
+            <audio src="audio/demo2.mp3"></audio>
           </div>
 
           <!-- Карточка 5 -->
           <div class="gift-card" style="background-image: url('img/gifts/gift5.png')">
             <h3 class="gift-card__title">Извинения</h3>
             <div class="gift-card__buttons">
-              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
+            <audio src="audio/demo1.mp3"></audio>
           </div>
 
           <!-- Карточка 6 -->
           <div class="gift-card" style="background-image: url('img/gifts/gift6.png')">
             <h3 class="gift-card__title">Родителей</h3>
             <div class="gift-card__buttons">
-              <button class="btn btn-secondary">Слушать демо</button>
+              <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
+            <audio src="audio/demo2.mp3"></audio>
           </div>
         </div>
       </div>
@@ -273,13 +282,13 @@
 
         <form class="free-consult__form">
           <input type="text" name="name" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
-          <button type="submit" class="btn btn-primary">Получить примеры</button>
+          <input type="tel" name="phone" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+          <button type="submit" class="btn">Получить примеры</button>
         </form>
       </div>
     </section>
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="container">
         <h2 class="section__title">Что говорят <span>Клиенты</span></h2>
 
@@ -327,7 +336,7 @@
       </div>
     </section>
 
-    <section class="pricing">
+    <section id="price" class="pricing">
       <div class="container">
         <h2 class="section__title">Ваш <span>Формат</span></h2>
 
@@ -344,7 +353,7 @@
               <li>Демо-вокал</li>
             </ul>
 
-            <button class="pricing-card__btn">Заказать Silver</button>
+            <button class="btn-primary pricing-card__btn">Заказать Silver</button>
           </div>
 
           <!-- Gold -->
@@ -375,7 +384,7 @@
               <li>Размещение на площадках</li>
             </ul>
 
-            <button class="pricing-card__btn">Заказать Platinum</button>
+            <button class="btn-primary pricing-card__btn">Заказать Platinum</button>
           </div>
 
         </div>
@@ -450,8 +459,8 @@
 
           <form class="contact-cta__form">
             <input type="text" placeholder="Ваше Имя" required>
-            <input type="tel" placeholder="+7 (___) ___-__-__" required>
-            <button class="btn-primary" type="submit">Задать вопрос</button>
+            <input type="tel" name="phone" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+            <button class="btn" type="submit">Задать вопрос</button>
           </form>
         </div>
 
@@ -466,7 +475,7 @@
       <div class="footer__top">
         <!-- Лого и описание -->
         <div class="footer__col">
-          <div class="footer__logo"><img src="img/logo.svg" alt="logo">PESNYA HIT</div>
+          <div class="footer__logo"><img src="img/logo.png" alt="logo"></div>
           <p class="footer__desc">
             Создаем песни, которые становятся историей
             вашей семьи и бизнеса.
@@ -514,6 +523,52 @@
     </div>
   </footer>
 
+  <div class="modal" id="orderModal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close">&times;</button>
+      <h2 class="section__title">Заказать песню</h2>
+      <form class="modal__form">
+        <input type="text" name="name" placeholder="Ваше Имя" required>
+        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="modal-examples" class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <p>Здесь вы можете вставить текст, видео или ссылку на аудио</p>
+      <!-- <audio controls src="audio/demo1.mp3"></audio> -->
+      <button class="modal__close">✖</button>
+    </div>
+  </div>
+
+  <script>
+    const orderButtons = document.querySelectorAll(".btn-primary");
+    const modal = document.getElementById("orderModal");
+    const closeModal = modal.querySelector(".modal__close");
+    const overlay = modal.querySelector(".modal__overlay");
+
+    orderButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        modal.style.display = "block";
+      });
+    });
+
+    closeModal.addEventListener("click", () => modal.style.display = "none");
+    overlay.addEventListener("click", () => modal.style.display = "none");
+
+    modal.querySelector(".modal__form").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Спасибо! Заявка отправлена.");
+      modal.style.display = "none";
+      e.target.reset();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
 
   <script>
     const faqItems = document.querySelectorAll('.faq-item');
@@ -530,7 +585,73 @@
     });
   </script>
 
+  <script>
+    const phoneInputs = document.querySelectorAll('input[name="phone"]');
 
+    phoneInputs.forEach(input => {
+      Inputmask({
+        mask: "+7 (999) 999-99-99",
+        showMaskOnHover: true,
+        clearIncomplete: true
+      }).mask(input);
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll(".demo-btn").forEach(button => {
+
+      button.addEventListener("click", function () {
+
+        const card = this.closest(".gift-card");
+        const audio = card.querySelector("audio");
+
+        // Останавливаем все остальные треки
+        document.querySelectorAll("audio").forEach(a => {
+          if (a !== audio) {
+            a.pause();
+            a.currentTime = 0;
+          }
+        });
+
+        document.querySelectorAll(".demo-btn").forEach(btn => {
+          if (btn !== this) {
+            btn.textContent = "Слушать демо";
+          }
+        });
+
+        // Переключение play/pause
+        if (audio.paused) {
+          audio.play();
+          this.textContent = "Пауза";
+        } else {
+          audio.pause();
+          this.textContent = "Слушать демо";
+        }
+
+      });
+
+    });
+  </script>
+
+  <script>
+    const btnExamples = document.getElementById("btn-examples");
+    const modalExamples = document.getElementById("modal-examples");
+    const closeExamples = modalExamples.querySelector(".modal__close");
+    const overlayExamples = modalExamples.querySelector(".modal__overlay");
+
+    btnExamples.addEventListener("click", e => {
+      e.preventDefault();
+      modalExamples.style.display = "flex";
+    });
+
+    closeExamples.addEventListener("click", () => {
+      modalExamples.style.display = "none";
+    });
+
+    overlayExamples.addEventListener("click", () => {
+      modalExamples.style.display = "none";
+    });
+  </script>
 </body>
 
 </html>
