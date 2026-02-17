@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pesnya hit</title>
-  <link rel="icon" type="image/png" href="img/logo.svg">
+  <link rel="icon" type="image/png" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -164,8 +165,8 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-
-            <audio controls loop src="audio/demo1.mp3"></audio>
+            <input type="range" class="progress" value="0">
+            <audio class="demoAudio" loop src="audio/demo1.mp3" type="audio/mpeg"></audio>
           </div>
 
           <!-- Карточка 2 -->
@@ -175,8 +176,8 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-
-            <audio controls loop src="audio/demo2.mp3"></audio>
+            <input type="range" class="progress" value="0">
+            <audio class="demoAudio" loop src="audio/demo2.mp3" type="audio/mpeg"></audio>
           </div>
 
           <!-- Карточка 3 -->
@@ -186,8 +187,8 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-
-            <audio controls loop src="audio/demo1.mp3"></audio>
+            <input type="range" class="progress" value="0">
+            <audio class="demoAudio" loop src="audio/demo1.mp3" type="audio/mpeg"></audio>
           </div>
           <!-- Карточка 4 -->
           <div class="gift-card" style="background-image: url('img/gifts/gift4.png')">
@@ -196,7 +197,8 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-            <audio controls loop src="audio/demo2.mp3"></audio>
+            <input type="range" class="progress" value="0">
+            <audio class="demoAudio" loop src="audio/demo2.mp3" type="audio/mpeg"></audio>
           </div>
 
           <!-- Карточка 5 -->
@@ -206,7 +208,8 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-            <audio controls loop src="audio/demo1.mp3"></audio>
+            <input type="range" class="progress" value="0">
+            <audio class="demoAudio" loop src="audio/demo1.mp3" type="audio/mpeg"></audio>
           </div>
 
           <!-- Карточка 6 -->
@@ -216,7 +219,8 @@
               <button class="btn btn-secondary demo-btn">Слушать демо</button>
               <button class="btn btn-primary">Заказать</button>
             </div>
-            <audio controls loop src="audio/demo2.mp3"></audio>
+            <input type="range" class="progress" value="0">
+            <audio class="demoAudio" loop src="audio/demo2.mp3" type="audio/mpeg"></audio>
           </div>
         </div>
       </div>
@@ -289,54 +293,6 @@
       </div>
     </section>
 
-    <section id="reviews" class="reviews">
-      <div class="container">
-        <h2 class="section__title">Что говорят <span>Клиенты</span></h2>
-
-        <div class="reviews__grid">
-          <!-- Отзыв 1 -->
-          <div class="review-card">
-            <div class="review-card__stars">★★★★★</div>
-            <p class="review-card__text">
-              "Заказывал песню жене на юбилей. Она плакала от счастья! Ребята попали в самое сердце текстом. Спасибо за
-              эмоции!"
-            </p>
-            <div class="review-card__footer">
-              <img src="img/reviews/1.png" alt="Алексей М." class="review-card__avatar">
-              <div class="review-card__author">Алексей М.</div>
-            </div>
-          </div>
-
-          <!-- Отзыв 2 -->
-          <div class="review-card">
-            <div class="review-card__stars">★★★★★</div>
-            <p class="review-card__text">
-              "Делали гимн компании. Очень профессиональный подход, звук как у топ-звезд. Сделали за 2 дня, как и
-              обещали."
-            </p>
-            <div class="review-card__footer">
-              <img src="img/reviews/2.png" alt="Марина В." class="review-card__avatar">
-              <div class="review-card__author">Марина В.</div>
-            </div>
-          </div>
-
-          <!-- Отзыв 3 -->
-          <div class="review-card">
-            <div class="review-card__stars">★★★★★</div>
-            <p class="review-card__text">
-              "Я вообще не умею петь, но в студии меня так записали и обработали, что я себя не узнал. Звучит очень
-              круто!
-              Рекомендую."
-            </p>
-            <div class="review-card__footer">
-              <img src="img/reviews/3.png" alt="Дмитрий К." class="review-card__avatar">
-              <div class="review-card__author">Дмитрий К.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="price" class="pricing">
       <div class="container">
         <h2 class="section__title">Ваш <span>Формат</span></h2>
@@ -392,6 +348,53 @@
       </div>
     </section>
 
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <h2 class="section__title">Что говорят <span>Клиенты</span></h2>
+
+        <div class="reviews__grid">
+          <!-- Отзыв 1 -->
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              "Заказывал песню жене на юбилей. Она плакала от счастья! Ребята попали в самое сердце текстом. Спасибо за
+              эмоции!"
+            </p>
+            <div class="review-card__footer">
+              <img src="img/reviews/1.png" alt="Алексей М." class="review-card__avatar">
+              <div class="review-card__author">Алексей М.</div>
+            </div>
+          </div>
+
+          <!-- Отзыв 2 -->
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              "Делали гимн компании. Очень профессиональный подход, звук как у топ-звезд. Сделали за 2 дня, как и
+              обещали."
+            </p>
+            <div class="review-card__footer">
+              <img src="img/reviews/2.png" alt="Марина В." class="review-card__avatar">
+              <div class="review-card__author">Марина В.</div>
+            </div>
+          </div>
+
+          <!-- Отзыв 3 -->
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              "Я вообще не умею петь, но в студии меня так записали и обработали, что я себя не узнал. Звучит очень
+              круто!
+              Рекомендую."
+            </p>
+            <div class="review-card__footer">
+              <img src="img/reviews/3.png" alt="Дмитрий К." class="review-card__avatar">
+              <div class="review-card__author">Дмитрий К.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="faq">
       <div class="container">
@@ -601,7 +604,7 @@
     });
   </script>
 
-  <script>
+  <!-- <script>
     document.querySelectorAll(".demo-btn").forEach(button => {
 
       button.addEventListener("click", function () {
@@ -635,6 +638,48 @@
       });
 
     });
+  </script> -->
+
+  <script>
+    const cards = document.querySelectorAll('.gift-card');
+
+    cards.forEach(card => {
+      const audio = card.querySelector('.demoAudio');
+      const btn = card.querySelector('.demo-btn');
+      const progress = card.querySelector('.progress');
+
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.demoAudio').forEach(otherAudio => {
+          if (otherAudio !== audio) {
+            otherAudio.pause();
+            otherAudio.currentTime = 0;
+          }
+        });
+
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      });
+
+      audio.addEventListener('play', () => {
+        btn.textContent = 'Пауза';
+      });
+
+      audio.addEventListener('pause', () => {
+        btn.textContent = 'Слушать демо';
+      });
+
+      audio.addEventListener('timeupdate', () => {
+        progress.value = (audio.currentTime / audio.duration) * 100;
+      });
+
+      progress.addEventListener('input', () => {
+        audio.currentTime = (progress.value / 100) * audio.duration;
+      });
+    });
+
   </script>
 
   <script>

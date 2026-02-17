@@ -1,5 +1,3 @@
-@import url(reset.css);
-
 :root {
   --main-gradient: linear-gradient(102.84deg, #FF00CC 0%, #333399 100%);
   --gold-gradient: linear-gradient(100.35deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
@@ -390,6 +388,11 @@ a:not(.btn-primary):hover {
   width: 100%;
 }
 
+.gift-card .progress {
+  margin-top: 10px;
+  z-index: 1;
+}
+
 .gift-card::before {
   content: "";
   position: absolute;
@@ -487,7 +490,7 @@ a:not(.btn-primary):hover {
 
 .free-consult {
   text-align: center;
-  margin-bottom: 110px;
+  margin-bottom: 40px;
 }
 
 .free-consult .container {
