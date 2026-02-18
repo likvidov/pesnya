@@ -268,7 +268,6 @@ a:not(.btn-primary):hover {
   gap: 10px;
   flex-wrap: wrap;
   padding: 47px 0;
-  /* для мобильных */
 }
 
 .contact-form__content {
@@ -350,10 +349,6 @@ a:not(.btn-primary):hover {
   cursor: pointer;
   white-space: nowrap;
 }
-
-/* .contact-form__form button:hover {
-  transform: scale(1.05);
-} */
 
 /* Gifts */
 
@@ -519,7 +514,6 @@ a:not(.btn-primary):hover {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
-  /* чтобы на мобильных переносилось */
 }
 
 .free-consult__form input {
@@ -587,7 +581,6 @@ a:not(.btn-primary):hover {
   align-items: center;
   gap: 12px;
   margin-top: auto;
-  /* прижимает блок к низу карточки */
 }
 
 .review-card__avatar {
@@ -625,10 +618,6 @@ a:not(.btn-primary):hover {
   flex-direction: column;
   transition: 0.3s ease;
 }
-
-/* .pricing-card:not(.pricing-card--popular) .pricing-card__btn {
-  background: transparent;
-} */
 
 .pricing-card:hover {
   transform: translateY(-8px);
@@ -678,7 +667,6 @@ a:not(.btn-primary):hover {
   box-shadow: none;
 }
 
-/* Популярный тариф */
 .pricing-card--popular {
   background: rgba(212, 175, 55, 0.05);
   border: 1px solid rgba(212, 175, 55, 1);
